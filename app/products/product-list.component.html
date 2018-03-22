@@ -26,8 +26,8 @@
                             </button>
                         </th>
                         <th>Product</th>
-                        <th>Code</th>
-                        <th>Available</th>
+                        <th>Availablity</th>
+                        <th>Description</th>
                         <th>Price</th>
                         <th>5 Star Rating</th>
                     </tr>
@@ -38,11 +38,15 @@
                             <img *ngIf='showImage' [src]='product.imageUrl' [title]='product.productName | uppercase'
                                  [style.width.px]='imageWidth' [style.margin.px]='imageMargin'/>
                         </td>
-                        <td>{{product.productId}}</td>
-                        <td>{{product.productName | lowercase}}</td>
+                        <td><a [routerLink]="['/product',product.productId]"> {{product.productName | lowercase}} </a></td>
                         <td>{{product.productAvailability}}</td>
+                        <td>{{product.description}}</td>
                         <td>{{product.price | currency:'USD':true:'1.2-2'}}</td>
-                        <td>{{product.rating}}</td>
+                        <td>
+                            <ai-star [rating]='product.rating' (ratingClicked)='onRatingClicked($event)'>
+
+                            </ai-star>
+                        </td>
                     </tr>
                 </tbody>
             </table>

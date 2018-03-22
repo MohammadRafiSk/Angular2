@@ -1,0 +1,32 @@
+﻿[
+  {
+    "productId": 2,
+    "productName": "Pen OOk",
+    "productAvailability": 8,
+    "price": 40,
+    "rating": 2.5,
+    "imageUrl": "/images/pen.png",
+    "releaseDate": "",
+    "description": "This is pen"
+  },
+  {
+    "productId": 3,
+    "productName": "Book",
+    "productAvailability": 8,
+    "price": 30,
+    "rating": 5,
+    "imageUrl": "/images/book.png",
+    "releaseDate": "",
+    "description": "This is a noval"
+  },
+  {
+    "productId": 4,
+    "productName": "Angular Book",
+    "productAvailability": 8,
+    "price": 30,
+    "rating": 5,
+    "imageUrl": "/images/book.png",
+    "releaseDate": "",
+    "description": "this is angular 2 book"
+  }
+]
